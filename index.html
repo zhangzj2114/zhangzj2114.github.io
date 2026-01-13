@@ -170,7 +170,14 @@ I am optimistic and vigorous. I like singing and hiking in my spare time.<br /> 
 </li>
 
 <details>
-    <summary class="news-toggle">News in 2024 and before</summary>
+    <!-- <summary class="news-toggle">News in 2024 and before</summary> -->
+  <summary style="cursor: pointer; list-style: none; font-weight: bold; margin-bottom: 10px; color: #2d4a89; outline: none;" 
+             onmouseover="this.style.textDecoration='underline'" 
+             onmouseout="this.style.textDecoration='none'">
+      <span style="display: inline-block; transition: transform 0.2s; font-size: 0.8em; margin-right: 5px;" 
+            onclick="this.parentElement.parentElement.hasAttribute('open') ? this.style.transform='rotate(0deg)' : this.style.transform='rotate(90deg)'">▶</span>
+      News 2024 and before
+    </summary>
     <li><p>12/2024: 3 papers got accepted in AAAI'25</p>
     </li>
     <li><p>12/2024: I will serve as the PC Member of WWW'25</p>
@@ -632,6 +639,7 @@ Journal Reviewer:
 </table>
 </body>
 </html>
+
 
 
 
