@@ -67,7 +67,7 @@ Students interested in machine learning and data mining are welcome to join us. 
 I am optimistic and vigorous. I like singing and hiking in my spare time.<br /> </p>  -->
 <!-- <p>Download my <a href="CV_Zijian.pdf">CV</a>. </p> -->
 
-<style>
+<!-- <style>
   /* Style for the summary label */
   .news-toggle {
     color: blue;
@@ -103,6 +103,27 @@ I am optimistic and vigorous. I like singing and hiking in my spare time.<br /> 
   details {
     margin-left: -20px;
   }
+</style> -->
+
+<style>
+/* 1. 定义三角的初始状态和旋转动画 */
+.news-details summary span {
+  display: inline-block;
+  transition: transform 0.2s ease; /* 旋转动画 */
+  margin-right: 5px;
+  font-size: 0.8em;
+}
+
+/* 2. 当 details 处于 open 状态时，旋转内部的 span */
+.news-details[open] summary span {
+  transform: rotate(90deg);
+}
+
+/* 3. 解决您提到的缩进错开问题：使用负边距对齐 */
+.news-details {
+  margin-left: -18px; 
+  list-style: none;
+}
 </style>
   
 <h2>News</h2>
@@ -168,6 +189,18 @@ I am optimistic and vigorous. I like singing and hiking in my spare time.<br /> 
 </li>
 <li><p>01/2025: I will serve as the PC Member of SIGIR'25</p>
 </li>
+
+  <details class="news-details">
+    <summary style="cursor: pointer; list-style: none; font-weight: bold; color: #2d4a89; outline: none; display: flex; align-items: center;"
+             onmouseover="this.style.textDecoration='underline'"
+             onmouseout="this.style.textDecoration='none'">
+      <span>▶</span> News in 2024 and before
+    </summary>
+    <ul style="list-style-type: disc; padding-left: 18px; margin-top: 5px;">
+      <li><p>09/2021: Joined JLU as a Ph.D. student of Computer Application Technology</p></li>
+      <li><p>09/2021: Joined JLU as a Ph.D. student of Computer Application Technology</p></li>
+    </ul>
+  </details>
   
 <ul style="list-style-type: disc;">
   <details style="margin-left: -18px;"> <summary style="cursor: pointer; list-style: none; font-weight: bold; color: #2d4a89; outline: none; display: flex; align-items: center;" 
@@ -639,6 +672,7 @@ Journal Reviewer:
 </table>
 </body>
 </html>
+
 
 
 
