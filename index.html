@@ -253,6 +253,94 @@ I am optimistic and vigorous. I like singing and hiking in my spare time.<br /> 
     <li class="news-list"><p>09/2021: Joined JLU as a Ph.D. student of Computer Application Technology</p>
     </li>
   </details>
+
+<style>
+  .extra-pub {
+    display: none;
+  }
+  #publications-section.show-all .extra-pub {
+    display: list-item; 
+  }
+  .toggle-pubs-link {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 16px; /* 可根据您网页原字体大小微调 */
+    margin-left: 15px;
+    font-weight: normal;
+  }
+</style>
+<h2 id="publications" style="display: inline-block; margin-bottom: 0;">Research Publications</h2>
+<span id="toggle-pubs-btn" class="toggle-pubs-link">Full list</span>
+<br><br>
+  
+( * indicates equal contribution, # indicates corresponding author.)<br><br>
+  
+<b>Tutorials</b>
+<ol>
+<li>
+    <p><i>LLM-Enhanced Web-Centric Spatio-Temporal Intelligence: Methods, Applications, and Frontier Research</i><br>
+    <b>Zijian Zhang</b>, Hao Miao, Yuxuan Liang, Yan Zhao, Irwin King<br>
+    The Web Conference 2026 <b>(WWW' 26)</b> <b style="color: red;">(CCF A)</b></p>
+</li>
+<li>
+    <p><i>Web-Centric Human Mobility Analytics: Methods, Applications, and Future Directions in the LLM Era</i><br>
+    <b>Zijian Zhang</b>, Hao Miao, Yuxuan Liang, Yan Zhao, Xiao Han, Pengyue Jia, Bin Yang, Christian S. Jensen<br>
+    The Web Conference 2025 <b>(WWW' 25)</b> <b style="color: red;">(CCF A)</b></p>
+</li>
+<li class="extra-pub">
+    <p><i>Large Language Model Enhanced Recommender Systems: A Survey</i><br>
+    Qidong Liu, Xiangyu Zhao, Yuhao Wang, Yejing Wang, <b>Zijian Zhang</b>, Yuqi Sun, Xiang Li, Maolin Wang, Pengyue Jia, Chong Chen, Wei Huang, Feng Tian<br>
+    The 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining <b>(KDD' 25)</b> <b style="color: red;">(CCF A)</b></p>
+</li>
+<li class="extra-pub">
+    <p><i>Learning from Spatio-Temporal Data in the LLM Era: Foundations, Models, and Emerging Trends</i><br>
+    <b>Zijian Zhang</b>, Xiao Han, Xiangyu Zhao, Chenjuan Guo, Bin Yang<br>
+    The 19th International Symposium on Spatial and Temporal Data <b>(SSTD' 25)</b> <b style="color: red;">(CCF C)</b></p>
+</li>
+</ol>
+  
+<b>Journal papers</b>
+<ol>
+<li>
+    <p><i>Personalized Recommendation Models in Federated Settings: A Survey</i><br>
+    Chunxu Zhang, Guodong Long, <b>Zijian Zhang</b>, Zhiwei Li, Honglei Zhang, Qiang Yang, Bo Yang<br>
+    IEEE Transactions on Knowledge and Data Engineering, 2025 <b style="color: red;">(CCF A, IF = 10.4)</b></p>
+</li>
+<li>
+    <p><i>A Contrastive Pretrain Model with Prompt Tuning forMulti-center Medication Recommendation</i><br>
+    Qidong Liu, Zhaopeng Qiu, Xiangyu Zhao, Xian Wu, <b>Zijian Zhang</b>, Tong Xu, Feng Tian<br>
+    ACM Transactions on Information Systems, 2025, 43(3): 1-29. <b style="color: red;">(CCF A, IF = 5.4)</b></p>
+</li>
+<li class="extra-pub">
+    <p><i>LaenNet: Learning robust GCNs by propagating labels</i><br>
+    Chunxu Zhang, Ximing Li, Hongbin Pei, <b>Zijian Zhang</b>, Bing Liu, Bo Yang<br>
+    Neural Networks. Sep, 2023, pp. 652-664. <b style="color: red;">(JCR Q1, IF = 7.8)</b></p>
+</li>
+<li class="extra-pub">
+    <p><i>BO-Aug: Learning Data Augmentation Policies via Bayesian Optimization</i><br>
+    Chunxu Zhang, Ximing Li, <b>Zijian Zhang</b>, Jiaxu Cui, Bo Yang<br>
+    Applied Intelligence. Aug, 2022, pp. 1-16. <b style="color: red;">(JCR Q2, IF = 5.019)</b></p>
+</li>
+</ol>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const btn = document.getElementById('toggle-pubs-btn');
+    const section = document.getElementById('publications-section');
+
+    if(btn && section) {
+      btn.addEventListener('click', function() {
+        section.classList.toggle('show-all');
+        if (section.classList.contains('show-all')) {
+          btn.textContent = 'Show less';
+        } else {
+          btn.textContent = 'Full list';
+        }
+      });
+    }
+  });
+</script>
   
   
 <h2 id="publications">Research Publications</h2> 
